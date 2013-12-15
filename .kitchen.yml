@@ -13,3 +13,11 @@ suites:
     run_list:
     - recipe[hubot-solo::default]
     attributes:
+  - name: campfire
+    run_list:
+    - recipe[hubot-solo::campfire]
+    attributes:
+- name: irc
+    run_list:
+    - recipe[hubot-solo::irc]
+    attributes:
