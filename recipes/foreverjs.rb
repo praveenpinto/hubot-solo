@@ -9,7 +9,7 @@ include_recipe "hubot-solo::nodejs"
 bash "install forever" do
   user "vagrant"
   cwd "/home/vagrant"
-  #creates "maybe"
+  creates "/home/vagrant/local/bin/forever"
   code <<-EOH
   STATUS=0
   HOME=/home/vagrant
