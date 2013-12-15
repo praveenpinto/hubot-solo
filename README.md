@@ -4,6 +4,7 @@ This is my chef-solo scripts to build a hubot. I have it pulling from my
 [myhubot](https://github.com/jjasghar/myhubot) but you can also pull it 
 directly from the "official" [hubot](https://github.com/github/hubot)
 repo.
+
 `hubot-solo::personal_git_hubot` - your (mine) personal github repo
 
 `hubot-solo::offical_git_hubot` - a basic install for a hubot :+1:
