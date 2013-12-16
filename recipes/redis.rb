@@ -14,6 +14,7 @@ end
 bash "untar and build redis" do
   user "root"
   cwd "/tmp/"
+  creates "/tmp/redis-2.8.3/00-RELEASENOTES"
   code <<-EOH
   STATUS=0
   tar xvzf redis-2.8.3.tar.gz || STATUS=1
@@ -26,7 +27,7 @@ end
 cookbook_file "/tmp/redis-2.8.3/redis.conf" do
   owner "root"
   group "root"
-  mode "0644"
+  mode "0664"
   source "redis.conf"
 end
 
