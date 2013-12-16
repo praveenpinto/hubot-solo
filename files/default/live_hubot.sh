@@ -1,3 +1,3 @@
 #!/bin/bash
 
-bin/hubot -a irc --name jjhubot-testing
+bin/hubot -a irc --name hubot-testing
