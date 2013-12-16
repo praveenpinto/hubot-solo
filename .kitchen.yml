@@ -21,3 +21,7 @@ suites:
     run_list:
       - recipe[hubot-solo::irc]
     attributes:
+  - name: personal
+    run_list:
+      - recipe[hubot-solo::personal_irc]
+    attributes:
